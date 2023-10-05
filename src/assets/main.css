@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80");
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  color: whitesmoke;
+}
+
+.weather-dashboard {
+  padding: 5rem;
+}
+
+.current-weather {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+  gap: 1rem;
+}
+
+.current-weather-city {
+  text-align: start;
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.current-weather-header {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.time {
+  color: whitesmoke;
+  font-size: 6rem;
+  height: 80px;
+  line-height: 80px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.weather {
+  display: inline-flex;
+  align-items: flex-end;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.weather-temperature-value {
+  font-size: 1.5em;
+}
+
+.weather-temperature-unit {
+  font-size: 0.8em;
+  margin-left: 3px;
+}
+
+.current-weather-header > .weather > .weather-icon {
+  font-size: 3rem;
+}
+
+.current-weather-header > .weather {
+  font-size: 1.5rem;
+}
+
+.current-weather-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.current-humidity {
+  display: flex;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.current-speed {
+  display: flex;
+  gap: 0.5rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.weather-icon {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.weather-info-icon {
+  font-size: 2rem;
+  vertical-align: bottom;
+}
+
+.weather-icon-text {
+  font-size: 1.5rem;
+}
+
+.daily-forecast {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.forecast-item {
+  padding: 1rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  width: calc(100% / 7);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  height: 145px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.forecast-item.expanded {
+  height: 180px;
+}
+
+.more-details {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
